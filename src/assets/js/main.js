@@ -45,6 +45,7 @@ $.get('https://hackathon-ef798.firebaseio.com/getemployee.json', (data) => {
           console.log(state.news);
           // $('button-collapse').sideNav();
       });
+
       const root = $('#root');
       render(root);
 

@@ -18,10 +18,13 @@ const Navbar = () =>{
     navWrapper.append(sideNav);
     nav.append(navWrapper);
 
-    // $(_=>{
-      aMenu.sideNav();
+$(_=> {
 
-    // });
+  $('.button-collapse').sideNav();
+  $('.collapsible').collapsible();
+
+});
+
 
     return nav;
 }
