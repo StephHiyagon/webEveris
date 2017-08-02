@@ -3,7 +3,7 @@ const Dashboard =(update)=>{
   const row=$('<div class="row"></div>');
   const col4=$('<div class="col s12 col m4 center-align"></div>');
   const photo=$('<img src="'+state.user.foto+'" alt="foto de perfil"/>');
-  const name=$('<p class="blue-text">Juan Perez</p>');
+  const name=$('<p class="blue-text">'+state.user.nombrePersona+' '+state.user.apellidoPersona+'</p>');
   const col8=$('<div class="col s12 col m8"></div>');
   const title=$('<div><h4>News</h4></div>');
   var noticias= (state.news).forEach((news)=>{
