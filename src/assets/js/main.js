@@ -53,5 +53,4 @@ $.get('https://hackathon-ef798.firebaseio.com/getemployee.json', (data) => {
 
 
 
-
 });
