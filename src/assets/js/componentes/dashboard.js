@@ -2,7 +2,7 @@ const Dashboard =(update)=>{
   const div=$('<div class="container"></div>');
   const row=$('<div class="row"></div>');
   const col4=$('<div class="col s12 col m4 center-align"></div>');
-  const photo=$('<img src="" alt="foto de perfil"/>');
+  const photo=$('<img src="'+state.user.foto+'" alt="foto de perfil"/>');
   const name=$('<p class="blue-text">Juan Perez</p>');
   const col8=$('<div class="col s12 col m8"></div>');
   const title=$('<div><h4>News</h4></div>');
@@ -17,6 +17,7 @@ const Dashboard =(update)=>{
   col4.append(name);
   row.append(col8);
   col8.append(title);
+
 
   return div;
 }
