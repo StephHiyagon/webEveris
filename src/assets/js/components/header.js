@@ -1,5 +1,5 @@
 const Login = (update) => {
- const container = $('<div class="row"></div>');
+ const container = $('<div class="flex row"></div>');
  const form = $('<form class="col s6 offset-s3 flex"></form>');
  const divUser = $('<div class=" input-field"><div>');
   const inputUser = $('<input id="last_name" type="text" class="validate">');
