@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StephHiyagon/pinterest-g.git"
+    "url": "git+https://github.com/StephHiyagon/webEveris.git"
   },
   "keywords": [
     "gulp",
@@ -22,9 +22,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/StephHiyagon/pinterest-g/issues"
+    "url": "https://github.com/StephHiyagon/webEveris/issues"
   },
-  "homepage": "https://github.com/StephHiyagon/pinterest-g#readme",
+  "homepage": "https://github.com/StephHiyagon/webEveris#readme",
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "express": "^4.15.3",
