@@ -77,7 +77,6 @@ const showBenef = (item, div) => {
       $(document).ready(function() {
         console.log(item);
         initMap(item);
-        // alert("hola");
       });
 
       $('.overlay1').css("display", "block");

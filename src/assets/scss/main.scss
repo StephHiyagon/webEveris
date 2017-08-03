@@ -22,7 +22,7 @@ $color-azul: #6785C1;
   width: 100%;
 }
 #mapa {
- height: 400px;
+ height: 100%;
  width: 100%;
 }
 
@@ -32,8 +32,7 @@ $color-azul: #6785C1;
   left: 0;
   bottom: 0;
   top: 0;
-  background-color: rgba(0,0,0,0.8);
-  display:none;
+  background-color: rgba(0,0,0,0.7);
 }
 .close{
   position: absolute;
