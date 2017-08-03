@@ -17,12 +17,7 @@ const button = $('<a class="center-align button waves-effect waves-light btn-lar
  divPassword.append(inputPassword, labelPassword);
  form.append(button);
 
-
-   var array = ["fondo-1.jpg","fondo-2.jpg", "fondo-3.jpg" ];
-   const  randno = array[Math.floor( Math.random() * array.length )];
-   container.css("background-image", "url(assets/img/"+randno+")");
-   console.log(randno);
-
+fondoRandon(container);
 
 button.on('click', function(){
   state.page= Dashboard;
@@ -30,3 +25,11 @@ button.on('click', function(){
 });
  return container;
 };
+
+
+function fondoRandon(container){
+  var array = ["fondo-1.jpg","fondo-2.jpg", "fondo-3.jpg" ];
+  const  randno = array[Math.floor( Math.random() * array.length )];
+  container.css("background-image", "url(assets/img/"+randno+")");
+  console.log(randno);
+}
