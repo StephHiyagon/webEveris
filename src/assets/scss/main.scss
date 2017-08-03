@@ -14,3 +14,15 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+.img-responsive{
+  width:100%;
+}
+
+.board{
+    column-width: 230px;
+    column-gap: 15px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 60px auto;
+}
