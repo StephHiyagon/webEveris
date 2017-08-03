@@ -10,9 +10,10 @@ const Login = (update) => {
 	const divPassword = $('<div class=" input-field"><div>');
 	const inputPassword = $('<input id="password" type="password" class="validate white-text">');
 	const labelPassword = $('<label for="password" class="white-text">Contraseña</label>');
+	const aPassword = $('<a href="#" class="underline">¿Olvide mi contraseña?</a>');
 	const button = $('<a class="center-align button waves-effect waves-light orange darken-4 btn-large">Entrar</a>');
-	const span = $('<p class="red-text center-align">Usuario y Password incorrectos</p>');
-	span.hide();
+	const spanError = $('<p class="red-text center-align">Usuario y Password incorrectos</p>');
+	spanError.hide();
 
 	button.attr("disabled", "true");
 
@@ -55,8 +56,9 @@ const Login = (update) => {
 	divLogo.append(logo);
 	divUser.append(inputUser, labelUser);
 	divPassword.append(inputPassword, labelPassword);
+	form.append(aPassword);
 	form.append(button);
-	form.append(span);
+	form.append(spanError);
 
 	fondoRandon(container);
 
@@ -65,7 +67,7 @@ const Login = (update) => {
 			state.page= Dashboard;
 			update();	
 		}else{
-			span.show();
+			spanError.show();
 		}
 		
 	});
