@@ -18,6 +18,10 @@
   font-weight: bold;
 }
 .collage{
-  background-image: url(../img/collage.jpg);
+  background-image: url(../img/teamwork.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  // filter: blur(3px);
   height: 90.1vh;
 }
