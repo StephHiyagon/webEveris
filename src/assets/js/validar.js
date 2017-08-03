@@ -1,7 +1,11 @@
 'use strict';
 
-const validarLetra = (e)=>{
-  if(e.which> 47 && e.which<58){
-    e.preventDefault();
-  }
-}
+const soloLetras = (e)=>{
+	let code = e.which;
+
+	if((code>=97 && code<=122) ||(code>=65 && code<=90) || code==39 || code==32 || code==241 || code==209){
+		return true;
+	}else{
+		return false;
+	}
+};
