@@ -44,3 +44,44 @@ const showItem = (item, container, divResult) => {
   container.show();
   return itemDiv;
 }
+
+
+const getCategories = ()=> {
+  $.get('https://hackathon-ef798.firebaseio.com/categories.json', (data) => {
+      if (!data) { return alert('no hay data');}
+      state.category = data;
+  });
+}
+
+const showBenef = (item, div) => {
+    const promocion = $('<div class="col s12 m6"></div>');
+    const contenedor = $('<div class="card horizontal height"></div>');
+
+    const divImagen1 = $('<div class="img-promocion valign-wrapper card-image"></div>');
+    const imagen = $('<img src="'+item.imgCompany+'">');
+    const divDescrip = $('<div class="card-stacked"></div>');
+    const divDescrip1 = $('<div class="promocion card-content"></div>');
+
+    const nombreCompania = $('<h4>'+item.nameCompany+'</h4>');
+    const descrip = $('<p>'+item.title+'</p>');
+    const span = $('<span class="float-right">'+item.discount+'</span>');
+    promocion.append(contenedor);
+    contenedor.append(divImagen1, divDescrip);
+    divImagen1.append(imagen);
+    divDescrip.append(divDescrip1);
+    divDescrip1.append(nombreCompania, descrip, span);
+
+    promocion.on("click", function(e){
+      e.preventDefault();
+      state.beneficio = item;
+      Modal(item, div);
+    });
+    return promocion;
+
+}
+
+const filterBenefit = (query)=> {
+  return state.benefits.filter((item)=>{
+    return (item.links.categories.indexOf(query.toString())>-1);
+  });
+}
