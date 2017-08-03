@@ -6,21 +6,29 @@ const render = (root) => {
     render(root);
   };
 
-  if(state.page == null){
-       wrapper.append(Login( _ => render(root)));
-   }else{
-      console.log(state.page);
-       wrapper.append(Navbar( _ => render(root)));
-       wrapper.append(state.page( _ => render(root)));
-   };
+  wrapper.append(Navbar(update));
+  // if(state.page == null){
+  //      wrapper.append(Login( _ => render(root)));
+  //  }else{
+  //     console.log(state.page);
+  //      wrapper.append(state.page( _ => render(root)));
+  //  };
 
-    root.append(wrapper);
+  switch (state.page) {
+    case "buscar":  wrapper.append(Buscar(update));
+
+      break;
+    default:
+
+  }
+
+  root.append(wrapper);
 
 }
 
 const state = {
 
-  page:null,
+  page:"buscar",
   user:null,
   news:null
 
