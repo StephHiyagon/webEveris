@@ -22,6 +22,7 @@ const Navbar = (update) =>{
     navWrapper.append(aLogo);
     navWrapper.append(usuario);
     navWrapper.append(aMenu);
+
     nav.append(navWrapper);
     nav.append(sideNav);
 
