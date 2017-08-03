@@ -1,5 +1,11 @@
+@import "colours";
+$gutter: 20px;
+$itemWidth: 236px;
+// $titleWidth: 145px;
+$borderRadius: 6px;
+// $avatarSize: 24px;
 $color-verde: #9AAE04;
-$color-azul: RGB (112,115,114);
+$color-azul: #6785C1;
 * {
   box-sizing: border-box;
 }
@@ -9,10 +15,11 @@ body {
   padding:0;
 }
 .fondo{
-  background-size: 100%;
+  background-size: cover;
+  height: 100vh;
 }
 .btn-large{
-  background-color: $color-verde;
+  width:80%;
 }
 
 .btn:hover, .btn-large:hover {
@@ -24,9 +31,12 @@ body {
   height: 100vh;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-
+.blue{
+  background-color: $color-azul;
+}
 .img-responsive{
   width:100%;
 }
@@ -37,6 +47,32 @@ body {
     width: 100%;
     max-width: 1300px;
     margin: 60px auto;
+}
+
+.element-stack{
+  padding: 0 ($gutter / 2);
+  margin: ($gutter / 2) 0;
+}
+
+.item{
+  width: $itemWidth + $gutter;
+  border-radius: $borderRadius;
+  cursor: pointer;
+  display:inline-block;
+  padding: ($gutter / 10) 0;
+  &:hover {
+    background: #f3f3f3;
+  }
+  &__stack{
+    @extend .element-stack ;
+    column-break-inside: avoid;
+    &--image{
+      display: inline-block;
+      width: $itemWidth;
+      border-radius: $borderRadius;
+    }
+  }
+}
 
 .div-logo{
   padding: 30px 100px 30px 100px;
@@ -46,7 +82,6 @@ body {
 }
 .button{
   margin-top: 30px;
-
 }
 .color-white{
   color: white;
@@ -57,4 +92,20 @@ body {
   margin-bottom: 30px;
   background-color: $color-azul;
   color: white;
+}
+
+@media (max-width:480px) {
+  .input-field{
+    width: 80%;
+    margin: auto;
+  }
+  .board{
+    text-align: center;
+  }
+
+  .item{
+    p{
+      text-align: justify;
+    }
+  }
 }

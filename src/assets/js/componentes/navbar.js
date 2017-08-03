@@ -1,5 +1,5 @@
 const Navbar = (update) =>{
-  const nav = $("<div class='lime'></div>");
+  const nav = $("<div class='blue'></div>");
     const navWrapper = $("<div class='row'></div>");
     const aLogo = $("<a href='#' class='color-white brand-logo col s6'>Everis</a>");
     const aMenu = $("<a href='#' data-activates='mobile-demo' class='color-white button-collapse col s6 right-align'></a>");
