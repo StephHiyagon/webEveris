@@ -26,11 +26,6 @@ const Navbar = () =>{
               edge: 'right'
             });
     });
-<<<<<<< HEAD
-    // aMenu.sideNav();
 
-
-=======
->>>>>>> 26cc0d9775cea3a629b4899bce085f294070df63
     return nav;
 }
