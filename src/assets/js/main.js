@@ -9,10 +9,6 @@ const render = (root) => {
   if(state.page == null){
        wrapper.append(Login( _ => render(root)));
    }else {
-<<<<<<< HEAD
-
-=======
->>>>>>> a72ecc82bbd941101c010754ba6ba48bce24d52f
       wrapper.append(Navbar(update));
       wrapper.append(state.page( _ => render(root)));
    }

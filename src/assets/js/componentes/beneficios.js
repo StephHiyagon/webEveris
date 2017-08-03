@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-const Beneficios = ()=>{
-=======
+
 const Beneficios = (update)=>{
->>>>>>> a72ecc82bbd941101c010754ba6ba48bce24d52f
+
   const div = $('<div class="container-fluid"><h4 class="news">Beneficios</h4></div>');
   const row = $('<div class="row"></div>');
   const categorias = $('<div class="col m2 hide-on-small-only"></div>');

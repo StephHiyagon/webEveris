@@ -9,12 +9,12 @@ const Navbar = (update) =>{
   const sideNav = $("<ul class='side-nav' id='mobile-demo'></ul>");
   const cerrar = $('<a href="#" class="close right"><i class="material-icons">close</i></a>');
   const liHome = $("<li><a href='#' class='links' data-link='Home'>Home</a></li>");
-  const liPerfil = $("<li><a href='#' class='links' data-link='Perfil'>Perfil</a></li>");
+  // const liPerfil = $("<li><a href='#' class='links' data-link='Perfil'>Perfil</a></li>");
   const liBeneficios = $('<li><a href="#" class="links" data-link="Beneficios">Beneficios</a></li>');
   const liComunicados = $('<li><a href="#" class="links" data-link="Notifications">Comunicados</a></li>');
   const liBusqueda = $('<li><a href="#" class="links" data-link="Buscar">Buscar Colaboradores</a></li>');
   const liCerrar=$('<li><a href="#" class="links" data-link="Cerrar">Cerrar</a></li>')
-    
+
     aLogo.on("click", ()=>{
       state.page = Dashboard;
       update();
@@ -23,7 +23,7 @@ const Navbar = (update) =>{
     aMenu.append(iconMenu);
     sideNav.append(cerrar);
     sideNav.append(liHome);
-    sideNav.append(liPerfil);
+    // sideNav.append(liPerfil);
     sideNav.append(liBeneficios);
     sideNav.append(liComunicados);
     sideNav.append(liBusqueda);
@@ -51,10 +51,10 @@ const Navbar = (update) =>{
                       state.page = Dashboard;
                       update();
             break;
-          case "Perfil":
-                        state.page = Perfil;
-                        update();
-            break;
+          // case "Perfil":
+          //               state.page = Perfil;
+          //               update();
+          //   break;
           case "Beneficios":
                         state.page = Beneficios;
                         update();
