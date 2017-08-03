@@ -8,13 +8,21 @@ const Navbar = (update) =>{
   const navMobile = $("<ul class='right hide-on-med-and-down'></ul>");
   const sideNav = $("<ul class='side-nav' id='mobile-demo'></ul>");
   const cerrar = $('<a href="#" class="close right"><i class="material-icons">close</i></a>');
+  const liHome = $("<li><a href='#' class='links' data-link='Home'>Home</a></li>");
   const liPerfil = $("<li><a href='#' class='links' data-link='Perfil'>Perfil</a></li>");
   const liBeneficios = $('<li><a href="#" class="links" data-link="Beneficios">Beneficios</a></li>');
   const liComunicados = $('<li><a href="#" class="links" data-link="Notifications">Comunicados</a></li>');
   const liBusqueda = $('<li><a href="#" class="links" data-link="Buscar">Buscar Colaboradores</a></li>');
   const liCerrar=$('<li><a href="#" class="links" data-link="Cerrar">Cerrar</a></li>')
+    
+    aLogo.on("click", ()=>{
+      state.page = Dashboard;
+      update();
+    });
+
     aMenu.append(iconMenu);
     sideNav.append(cerrar);
+    sideNav.append(liHome);
     sideNav.append(liPerfil);
     sideNav.append(liBeneficios);
     sideNav.append(liComunicados);
@@ -39,6 +47,10 @@ const Navbar = (update) =>{
         e.preventDefault();
         $('.side-nav').sideNav('hide');
         switch ($(this).data("link")) {
+          case "Home":
+                      state.page = Dashboard;
+                      update();
+            break;
           case "Perfil":
                         state.page = Perfil;
                         update();
@@ -53,6 +65,10 @@ const Navbar = (update) =>{
             break;
           case "Buscar":
                         state.page = Buscar;
+                        update();
+            break;
+          case "Cerrar":
+                        state.page = null;
                         update();
             break;
           default:

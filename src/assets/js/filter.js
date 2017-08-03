@@ -22,12 +22,11 @@ const showItem = (item, container, divResult) => {
   const divImg = $('<div class="col m5 s12"><img src=""></div>');
   const divInfo = $('<div class="col m7 s12"></div>');
   const name = $('<h5>'+ item.Nombre + '  '+ item.Apellido +'   '+item.Apellido2 +'</h5> <br>');
-  const mail = $('<p><span class="strong"> Correo: </span>'+item.DatosEmpleado.EMAIL+'</p>');
+  const mail = $('<p><spanclass="strong"> Correo: </span><a href="mailto:'+item.DatosEmpleado.EMAIL+'">'+item.DatosEmpleado.EMAIL+'</a></p>');
   const codigo = $('<p><span class="strong"> N° Empleado: </span>'+item.DatosEmpleado.EMPLOYEE_NUMBER+'</p>');
 
   itemDiv.append(p1);
   itemDiv.append(p2);
-
 
   divInfo.append(name);
   divInfo.append(codigo);
