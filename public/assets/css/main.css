@@ -1,1 +1,1 @@
-*{box-sizing:border-box}body{margin:0;padding:0}.flex{display:flex;height:100vh;flex-direction:column;justify-content:center}
+*{box-sizing:border-box}body{margin:0;padding:0}.flex{display:flex;height:100vh;flex-direction:column;justify-content:center}.card{padding:2rem;margin-bottom:2rem}.card i{position:absolute;top:-10px;right:-8px;transform:rotate(30deg)}.fw500{font-weight:500}
