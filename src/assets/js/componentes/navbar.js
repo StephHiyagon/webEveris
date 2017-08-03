@@ -2,7 +2,7 @@ const Navbar = (update) =>{
   const nav = $("<div class='header'></div>");
     const navWrapper = $("<div class='row menu'></div>");
     const aLogo = $("<a href='#' class='brand-logo col s2'><img src='assets/img/weberis.png'></a>");
-    const usuario = $('<div class="col s7 usuario valign-wrapper hide-on-small-only"><img class="circle" src="'+ state.user.foto +'"><span> Hola '+ state.user.nombrePersona +'</span></div>');
+    const usuario = $('<div class="col s7 usuario valign-wrapper hide-on-small-only"><img class="circle" src="'+ state.user.foto +'"><span> Hola, '+ state.user.nombrePersona +'</span></div>');
     const aMenu = $("<a href='#' data-activates='mobile-demo' class='button-collapse col s3 right-align'></a>");
     const iconMenu = $("<i class='material-icons'>menu</i>");
     const navMobile = $("<ul class='right hide-on-med-and-down'></ul>");

@@ -14,7 +14,7 @@ const Dashboard =(update)=>{
         anchor.append(title);
         title.append(panel);
         panel.append('<img class="item__stack--image" src="'+news.imgURL+'" alt='+news.description+'/>');
-        panel.append(`<h5>${news.attachments.data[0].title}</h5>`);
+        panel.append(`<h6 class="titleNews">${news.attachments.data[0].title}</h6>`);
         panel.append(`<p>${news.description}</p>`);
         col8.append(anchor);
         }

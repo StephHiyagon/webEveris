@@ -54,6 +54,10 @@ body {
   margin: ($gutter / 2) 0;
 }
 
+.titleNews{
+  font-size: 1.3em;
+}
+
 .item{
   width: $itemWidth + $gutter;
   border-radius: $borderRadius;
