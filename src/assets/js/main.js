@@ -31,7 +31,8 @@ const state = {
   page:null,
   user:null,
   news:null,
-  benefits:null
+  benefits:null,
+  id2: null
 
 }
 
