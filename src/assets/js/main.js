@@ -8,13 +8,17 @@ const render = (root) => {
 
   if(state.page == null){
        wrapper.append(Login( _ => render(root)));
-   }else{
-      
-       wrapper.append(Navbar( _ => render(root)));
-       wrapper.append(state.page( _ => render(root)));
+   }else if (state.page == Dashboard) {
+     console.log("Hola");
+      wrapper.append(Navbar(update));
+      wrapper.append(state.page( _ => render(root)));
+   }else if (state.page == Buscar) {
+     wrapper.append(Navbar(update));
+     wrapper.append(state.page( _ => render(root)));
+
    };
 
-    root.append(wrapper);
+  root.append(wrapper);
 
 }
 
@@ -28,8 +32,6 @@ const state = {
 
 
 $(_=>{
-
-
 $.get('https://hackathon-ef798.firebaseio.com/getemployee.json', (data) => {
 
       if (!data) { return alert('no hay data gg');}
@@ -39,18 +41,12 @@ $.get('https://hackathon-ef798.firebaseio.com/getemployee.json', (data) => {
       $.get('https://hackathon-ef798.firebaseio.com/news.json', (data) => {
 
           if (!data) { return alert('no hay data gg');}
-
-
           state.news=data.data;
           console.log(state.news);
-
       });
 
       const root = $('#root');
       render(root);
 
     });
-
-
-
 });

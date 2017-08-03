@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 *{box-sizing:border-box}body{margin:0;padding:0}.flex{display:flex;height:100vh;flex-direction:column;justify-content:center}.img-responsive{width:100%}.board{column-width:230px;column-gap:15px;width:100%;max-width:1300px;margin:60px auto}
 =======
 *{box-sizing:border-box}body{margin:0;padding:0}.fondo{background-size:100%}.btn-large{background-color:#9AAE04}.btn:hover,.btn-large:hover{background-color:RGB 112,115,114}.flex{display:flex;height:100vh;flex-direction:column;justify-content:center}.div-logo{padding:30px 100px 30px 100px}.div-logo .logo{width:100%}.button{margin-top:30px}
 >>>>>>> 26cc0d9775cea3a629b4899bce085f294070df63
+=======
+*{box-sizing:border-box}body{margin:0;padding:0}.fondo{background-size:100%}.btn-large{background-color:#9AAE04}.btn:hover,.btn-large:hover{background-color:RGB 112,115,114}.flex{display:flex;height:100vh;flex-direction:column;justify-content:center}.div-logo{padding:30px 100px 30px 100px}.div-logo .logo{width:100%}.button{margin-top:30px}.color-white{color:white}.lime{height:50px;padding:12px;margin-bottom:30px;background-color:RGB 112,115,114;color:white}
+>>>>>>> 73382d9c7255f42676fe18ca9ad11d7d2491bd58
