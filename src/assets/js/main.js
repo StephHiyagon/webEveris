@@ -16,6 +16,9 @@ const render = (root) => {
      wrapper.append(Navbar(update));
      wrapper.append(state.page( _ => render(root)));
 
+   }else if(state.page == Beneficios){
+     wrapper.append(Navbar(update));
+     wrapper.append(state.page( _ => render(root)));
    };
 
   root.append(wrapper);
@@ -26,7 +29,8 @@ const state = {
 
   page:null,
   user:null,
-  news:null
+  news:null,
+  benefits:null
 
 }
 
@@ -43,6 +47,12 @@ $.get('https://hackathon-ef798.firebaseio.com/getemployee.json', (data) => {
           if (!data) { return alert('no hay data gg');}
           state.news=data.data;
           console.log(state.news);
+      });
+      $.get('https://hackathon-ef798.firebaseio.com/benefits.json', (data) => {
+
+          if (!data) { return alert('no hay data gg');}
+          state.benefits=data;
+          console.log(data[1]);
       });
 
       const root = $('#root');

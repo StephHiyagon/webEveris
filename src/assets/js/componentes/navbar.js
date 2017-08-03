@@ -21,6 +21,10 @@ const Navbar = (update) =>{
       state.page= Buscar;
       update();
     });
+    liBeneficios2.on('click', function(){
+      state.page= Beneficios;
+      update();
+    });
 
     $(_=>{
       $(".button-collapse").sideNav({
