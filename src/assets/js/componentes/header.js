@@ -1,6 +1,5 @@
 const Login = (update) => {
-  // const containerM=$('<div class="container-fluid"></div>');
-  // const row=$('<div class="row"></div>');
+  
   const container = $('<div class="flex fondo"></div>');
   const form = $('<form class="center-align"></form>');
   const divLogo = $('<div class="div-logo"></div>');
@@ -12,8 +11,7 @@ const Login = (update) => {
   const inputPassword = $('<input id="password" type="password" class="validate white-text">');
   const labelPassword = $('<label for="password" class="white-text">Contraseña</label>');
   const button = $('<a class="center-align button waves-effect waves-light orange darken-4 btn-large">Entrar</a>');
-  // containerM.append(row);
-  // row.append(container);
+
   container.append(form);
   form.append(divLogo, divUser, divPassword);
   divLogo.append(logo);

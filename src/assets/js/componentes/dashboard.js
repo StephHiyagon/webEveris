@@ -3,7 +3,6 @@ const Dashboard =(update)=>{
   const row=$('<div class="row"></div>');
   const col8=$('<div class="board"></div>');
   const news=$('<h4 class="">News</h4>');
-  col8.append(news);
   var noticias= (state.news).forEach((news)=>{
         news.attachments.data[0].title;
         console.log(news.attachments.data[0].title);
@@ -23,6 +22,7 @@ const Dashboard =(update)=>{
 
   });
   div.append(row);
+  row.append(news)
   row.append(col8);
 
 
