@@ -11,10 +11,17 @@
 
       }
     }
+    .brand-logo{
+      img{
+        height: 50px;
+      }
+    }
     .usuario{
+      justify-content: center;
       text-align: center;
       color: white;
       img{
+        margin-right: 10px;
         height: 50px;
       }
     }
