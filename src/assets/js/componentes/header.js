@@ -4,10 +4,10 @@ const Login = (update) => {
  const divLogo = $('<div class="div-logo"></div>');
  const logo = $('<img class="logo" src="assets/img/everis.png">');
  const divUser = $('<div class=" input-field"><div>');
-  const inputUser = $('<input id="last_name" type="text" class="validate">');
+  const inputUser = $('<input id="last_name" type="text" class="validate white-text">');
   const labelUser = $('<label for="last_name">Usuario</label>');
 const divPassword = $('<div class=" input-field"><div>');
- const inputPassword = $('<input id="password" type="password" class="validate">');
+ const inputPassword = $('<input id="password" type="password" class="validate white-text">');
  const labelPassword = $('<label for="password">Contraseña</label>');
 const button = $('<a class="center-align button waves-effect waves-light btn-large">Entrar</a>');
  container.append(form);
