@@ -1,5 +1,10 @@
+
 $color-verde: #9AAE04;
 $color-azul: RGB (112,115,114);
+
+@import "buscar";
+@import "navbar";
+
 * {
   box-sizing: border-box;
 }
