@@ -1,5 +1,5 @@
-
-
+$color-verde: #9AAE04;
+$color-azul: RGB (112,115,114);
 * {
   box-sizing: border-box;
 }
@@ -8,12 +8,24 @@ body {
   margin:0;
   padding:0;
 }
+.fondo{
+  background-size: 100%;
+}
+.btn-large{
+  background-color: $color-verde;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: $color-azul;
+}
+
 .flex{
   display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
 }
+<<<<<<< HEAD
 
 .img-responsive{
   width:100%;
@@ -25,4 +37,14 @@ body {
     width: 100%;
     max-width: 1300px;
     margin: 60px auto;
+=======
+.div-logo{
+  padding: 30px 100px 30px 100px;
+  .logo{
+    width: 100%;
+  }
+}
+.button{
+  margin-top: 30px;
+>>>>>>> 26cc0d9775cea3a629b4899bce085f294070df63
 }
