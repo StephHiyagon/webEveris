@@ -9,18 +9,13 @@ const render = (root) => {
   if(state.page == null){
        wrapper.append(Login( _ => render(root)));
    }else {
+<<<<<<< HEAD
 
+=======
+>>>>>>> a72ecc82bbd941101c010754ba6ba48bce24d52f
       wrapper.append(Navbar(update));
       wrapper.append(state.page( _ => render(root)));
    }
-  //  else if (state.page == Buscar) {
-  //    wrapper.append(Navbar(update));
-  //    wrapper.append(state.page( _ => render(root)));
-   //
-  //  }else if(state.page == Beneficios){
-  //    wrapper.append(Navbar(update));
-  //    wrapper.append(state.page( _ => render(root)));
-  //  };
 
   root.append(wrapper);
 
@@ -31,12 +26,14 @@ const state = {
   page:null,
   user:null,
   news:null,
-  benefits:null
+  benefits:null,
+  id2: null
 
 }
 
 
 $(_=>{
+
 $.get('https://hackathon-ef798.firebaseio.com/getemployee.json', (data) => {
 
       if (!data) { return alert('no hay data gg');}

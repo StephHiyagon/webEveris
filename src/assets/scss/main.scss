@@ -9,7 +9,36 @@ $color-azul: #6785C1;
 * {
   box-sizing: border-box;
 }
+.modal-ejemplo{
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  z-index: 6;
+  position: fixed;
+  top: 30px;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+#mapa {
+ height: 100%;
+ width: 100%;
+}
 
+.overlay1{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+.close{
+  position: absolute;
+  right: 10px;
+  top:10px;
+}
 body {
   margin:0;
   padding:0;
@@ -194,9 +223,14 @@ img.filtro{
   .height{
     height:auto;
   }
-
   .row.menu{
     display:flex;
-
   }
+}
+#mapa{
+  width: 100%;
+  height: 500px;
+}
+.modal{
+
 }

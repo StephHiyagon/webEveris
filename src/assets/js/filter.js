@@ -54,7 +54,7 @@ const getCategories = ()=> {
   });
 }
 
-const showBenef = (item) => {
+const showBenef = (item, div) => {
     const promocion = $('<div class="col s12 m6"></div>');
     const contenedor = $('<div class="card horizontal height"></div>');
 
@@ -75,6 +75,13 @@ const showBenef = (item) => {
     promocion.on("click", function(e){
       e.preventDefault();
       state.beneficio = item;
+      $(document).ready(function() {
+        console.log(item);
+        initMap(item);
+      });
+
+      $('.overlay1').css("display", "block");
+      Modal(item, div);
     });
     return promocion;
 
