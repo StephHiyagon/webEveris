@@ -17,14 +17,12 @@ body {
 .card{
 	padding: 2rem;
     margin-bottom: 2rem;
-  
-    i{
-        position: absolute;
-	    top: -10px;
-	    right: -8px;
-	    transform: rotate(30deg);
-    }
 }
 .fw500{
 	font-weight: 500;
+}
+.img-small{
+	margin: 0 auto;
+	iwidth: 70%;
+	height: 100px;
 }

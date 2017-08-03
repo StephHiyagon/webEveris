@@ -45,9 +45,7 @@ const cuadroPequeño = (info)=>{
 
 	card.css("padding", "1rem");
 	cardContent.css("padding", "24px 0 6px 0");
-
-	img.css("width", "100%");
-	img.css("height", "100px");
+	img.addClass("img-small");
 
 	cardContent.append(title);
 	cardContent.append(subTitle);
@@ -88,6 +86,7 @@ const cuadroHorizontal = (info)=>{
 	const title = $("<h5>"+info.title+"</h5>");
 	const subTitle = $(info.subtitle);
 
+	card.css("height", "320px");
 	img.css("width", "100%");
 	img.css("height", "250px");
 
