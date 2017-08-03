@@ -121,11 +121,20 @@ body {
   }
   .board{
     text-align: center;
+    margin: 20px auto;
   }
 
+  .news{
+    margin-left: 20px;
+  }
   .item{
     p{
       text-align: justify;
     }
+  }
+
+  .row.menu{
+    display:flex;
+
   }
 }

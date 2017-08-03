@@ -2,7 +2,7 @@ const Dashboard =(update)=>{
   const div=$('<div class="container"></div>');
   const row=$('<div class="row"></div>');
   const col8=$('<div class="board"></div>');
-  const news=$('<h4 class="">News</h4>');
+  const news=$('<h4 class="news">News</h4>');
   var noticias= (state.news).forEach((news)=>{
         news.attachments.data[0].title;
         console.log(news.attachments.data[0].title);
