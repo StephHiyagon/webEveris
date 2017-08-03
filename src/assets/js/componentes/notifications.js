@@ -10,10 +10,16 @@ const Notifications = ()=>{
 		console.log(array);
 
 		const col1 = $("<div class='col s12'></div>");
-		const sub1 = $("<div class='col s12 col l9'></div>");
-		const sub2 = $("<div class='col s12 col l3'></div>");
-		const col2 = $("<div class='col s12'></div>");
-		
+		const sub1 = $("<div class='hide-on-med-and-down col s12 col l9'></div>");
+		const sub2 = $("<div class='hide-on-med-and-down col s12 col l3'></div>");
+		const col2 = $("<div class='hide-on-med-and-down col s12'></div>");
+		array.forEach((obj)=>{
+			let col = $("<div class='hide-on-med-and-up col s12'></div>");
+			col.append(cuadroGrande(obj));
+
+			col1.append(col);
+
+		});
 		sub1.append(cuadroGrande(array[1]));
 		sub2.append(cuadroPequeño(array[0]));
 		sub2.append(cuadroPequeño(array[4]));
@@ -41,7 +47,6 @@ const cuadroPequeño = (info)=>{
 	const cardContent = $("<div class='card-content'></div>");
 	const title = $("<h6 class='fw500'>"+info.title+"</h6>");
 	const subTitle = $(info.subtitle);
-	/*const icon = $("<i class='material-icons'>attach_file</i>");*/
 
 	card.css("padding", "1rem");
 	cardContent.css("padding", "24px 0 6px 0");
