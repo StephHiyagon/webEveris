@@ -1,5 +1,5 @@
 const Beneficios = ()=>{
-  const div = $('<div class="container-fluid">Beneficios</div>');
+  const div = $('<div class="container-fluid"><h4 class="news">Beneficios</h4></div>');
   const row = $('<div class="row"></div>');
   const categorias = $('<div class="col m2 hide-on-small-only"></div>');
   const listaCategoria = $('<ul class="collection">'+
