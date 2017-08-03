@@ -71,6 +71,10 @@ const showBenef = (item) => {
     divDescrip.append(divDescrip1);
     divDescrip1.append(nombreCompania, descrip, span);
 
+    promocion.on("click", function(e){
+      e.preventDefault();
+      state.beneficio = item;
+    });
     return promocion;
 
 }
