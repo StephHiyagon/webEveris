@@ -4,7 +4,7 @@ const Buscar = (update) => {
 
   const parent = $('<div class="collage"></div>');
   const divForm = $('<div class=" row"></div>');
-  const form = $('<form class="col s12 m8 l6 offset-l3 offset-m2" autocomplete="off"></form>');
+  const form = $('<form class="col s12 m8 l6 offset-l3 offset-m2 search" autocomplete="off"></form>');
   const row = $('<div class="row"></div>');
   const div = $('<div class="input-field col s12"><i class="material-icons prefix white-text">search</i></div>');
   const input = $('<input id="icon_prefix" type="text" class="white-text search">');
