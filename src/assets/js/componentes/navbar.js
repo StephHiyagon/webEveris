@@ -6,8 +6,8 @@ const Navbar = (update) =>{
   const aMenu = $("<a href='#' data-activates='mobile-demo' class='button-collapse col s3 right-align'></a>");
   const iconMenu = $("<i class='material-icons'>menu</i>");
   const navMobile = $("<ul class='right hide-on-med-and-down'></ul>");
-  const sideNav = $("<ul class='side-nav' id='mobile-demo'></ul>");
-  const cerrar = $('<a href="#" class="close right"><i class="material-icons">close</i></a>');
+  const sideNav = $("<ul class='side-nav center-align' id='mobile-demo'></ul>");
+  const cerrar = $('<a href="#" class="close right"><i class="material-icons black-text">close</i></a>');
   const liHome = $("<li><a href='#' class='links' data-link='Home'>Home</a></li>");
   // const liPerfil = $("<li><a href='#' class='links' data-link='Perfil'>Perfil</a></li>");
   const liBeneficios = $('<li><a href="#" class="links" data-link="Beneficios">Beneficios</a></li>');
