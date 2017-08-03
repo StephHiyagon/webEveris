@@ -15,7 +15,7 @@ const button = $('<a class="center-align waves-effect waves-light btn-large">Ent
  form.append(button);
 
 button.on('click', function(){
-  state.page= Dashboard;
+  state.page= Notifications;
   update();
 });
  return container;
