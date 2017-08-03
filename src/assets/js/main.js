@@ -7,13 +7,6 @@ const render = (root) => {
   };
 
   wrapper.append(Navbar(update));
-  // if(state.page == null){
-  //      wrapper.append(Login( _ => render(root)));
-  //  }else{
-  //     console.log(state.page);
-  //      wrapper.append(state.page( _ => render(root)));
-  //  };
-
   switch (state.page) {
     case "buscar":  wrapper.append(Buscar(update));
 
@@ -28,7 +21,7 @@ const render = (root) => {
 
 const state = {
 
-  page:"buscar",
+  page:null,
   user:null,
   news:null
 
