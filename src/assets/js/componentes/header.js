@@ -1,5 +1,5 @@
 const Login = (update) => {
-  
+
   const container = $('<div class="flex fondo"></div>');
   const form = $('<form class="center-align"></form>');
   const divLogo = $('<div class="div-logo"></div>');

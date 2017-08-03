@@ -114,6 +114,20 @@ body {
     top: 10px;
 }
 
+.card{
+	padding: 2rem;
+    margin-bottom: 2rem;
+}
+.fw500{
+	font-weight: 500;
+}
+.img-small{
+	margin: 0 auto;
+	width: 70%;
+	height: 100px;
+}
+
+
 @media (max-width:480px) {
   .input-field{
     width: 80%;

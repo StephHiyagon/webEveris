@@ -8,18 +8,19 @@ const render = (root) => {
 
   if(state.page == null){
        wrapper.append(Login( _ => render(root)));
-   }else if (state.page == Dashboard) {
+   }else {
      console.log("Hola");
       wrapper.append(Navbar(update));
       wrapper.append(state.page( _ => render(root)));
-   }else if (state.page == Buscar) {
-     wrapper.append(Navbar(update));
-     wrapper.append(state.page( _ => render(root)));
-
-   }else if(state.page == Beneficios){
-     wrapper.append(Navbar(update));
-     wrapper.append(state.page( _ => render(root)));
-   };
+   }
+  //  else if (state.page == Buscar) {
+  //    wrapper.append(Navbar(update));
+  //    wrapper.append(state.page( _ => render(root)));
+   //
+  //  }else if(state.page == Beneficios){
+  //    wrapper.append(Navbar(update));
+  //    wrapper.append(state.page( _ => render(root)));
+  //  };
 
   root.append(wrapper);
 
