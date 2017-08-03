@@ -74,6 +74,14 @@ const showBenef = (item, div) => {
     promocion.on("click", function(e){
       e.preventDefault();
       state.beneficio = item;
+      // $('.overlay1').show();
+      $(document).ready(function() {
+        console.log(item);
+        initMap(item);
+        // alert("hola");
+      });
+
+      $('.overlay1').css("display", "block");
       Modal(item, div);
     });
     return promocion;

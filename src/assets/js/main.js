@@ -29,6 +29,7 @@ const state = {
 
 
 $(_=>{
+
 $.get('https://hackathon-ef798.firebaseio.com/getemployee.json', (data) => {
 
       if (!data) { return alert('no hay data gg');}

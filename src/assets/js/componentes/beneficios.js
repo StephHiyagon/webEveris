@@ -37,19 +37,27 @@ const Beneficios = (update)=>{
 }
 
 const Modal = (item, div)=>{
-
+const plomo= $('<div class="overlay1"></div>');
 const modal=$('<div class="container modal-ejemplo"></div>');
 const close = $('<span class="close">X</span>');
 const row = $('<div class="row"></div>');
-const colum1 = $('<div class="col s12 m6">'+item.description+'</div>');
+const colum1 = $('<div class="col s12 m6"></div>');
+  const imagen = $('<img src="'+item.imgCompany+'">');
+  const tienda = $('<h5>'+item.nameCompany+'</h5>');
+  const condiciones = $('<p>'+item.description+'</p>');
 const colum2 = $('<div class="col s12 m6"></div>');
-const mapa = $('<div id="map" class="mapa"></div>');
+const mapa = $('<div id="mapa" class="mapa"></div>');
 
-div.append(modal);
+div.append(plomo, modal);
 modal.append(row, close);
 row.append(colum1, colum2);
+colum1.append(imagen, tienda,condiciones)
 colum2.append(mapa);
+
   close.on('click', function(){
+    // $('.overlay1').hide();
+    $('.overlay1').css("display", "none");
+
     modal.hide();
     modal.empty();
   });
